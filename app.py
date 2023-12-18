@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun  3 18:06:24 2022
 
-@author: shilp
-"""
 
 import streamlit as st
 import pandas as pd
@@ -12,7 +7,10 @@ import joblib
 import numpy as np
 import pickle as pkl 
 st.title("ASTEROID DIAMETER PREDICTION")
-st.write("Measuring diameter of asteroids is very hard and complicated process 😫 . Machine learning comes to rescue i just need some parameters of asteroids and i will predict diameter of asteroid for you !!! 😍 .I know most of you are not scientists don't worry i will provide you a range for all the features if you don't know you can choose fr
+st.write("Measuring diameter of asteroids is very hard and complicated process 😫 . Machine learning comes to rescue i just need some parameters of asteroids and i will predict diameter of asteroid for you !!! 😍 .I know most of you are not scientists don't worry i will provide you a range for all the features if you don't know you can choose from it .")
+
+
+#Eccentricity
 e=st.number_input("Eccentricity of elliptical path of asteroid . Range(0.00-0.98)")
 #Inclination with respect to x-y plane
 i=st.number_input("Inclination with respect to x-y plane. Range(0.044-151.81)")
@@ -223,6 +221,7 @@ if st.button('Calculate Diameter'):
      pred=final_model.predict(X_train.values)[0][0]
      st.title("Diameter of asteroid is {} km".format(abs(pred)))
      
+
 
 
 
