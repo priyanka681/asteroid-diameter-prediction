@@ -1,4 +1,4 @@
-                                                                                        **  Asteroid Diameter Prediction**
+ **  Asteroid Diameter Prediction**
 
                                                                                         
 This repository focuses on predicting the diameter of asteroids using publicly available datasets and machine learning techniques. Accurate estimation of asteroid diameters is essential for assessing potential threats and planning mitigation strategies, such as deflection or destruction of hazardous asteroids.
